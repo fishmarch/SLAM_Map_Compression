@@ -1,0 +1,93 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 481.2
+Camera.fy: -480.0
+#Camera.fy: 480.0
+Camera.cx: 319.5
+Camera.cy: 239.5
+
+Camera.k1: 0
+Camera.k2: 0
+Camera.p1: 0
+Camera.p2: 0
+Camera.k3: 0
+
+Camera.width: 640
+Camera.height: 480
+
+# Camera frames per second 
+Camera.fps: 30.0
+
+# IR projector baseline times fx (aprox.)
+Camera.bf: 40.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Close/Far threshold. Baseline times.
+ThDepth: 40.0
+
+MinDepth: 0.0
+
+# Deptmap values factor 
+DepthMapFactor: 5000.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1500
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 3
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 1
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+
+
+Map.CompressByGrid2D.num: 50
+Map.CompressByGrid2D.lambda: 500
+Map.CompressByGrid2D.lambda2: 0.2
+Map.CompressByGrid2D.lambdaStep: 0.1
+Map.CompressByGrid2D.GridWidth: 50.0
+Map.CompressByGrid2D.GridX: 25
+Map.CompressByGrid2D.GridY: 19
+Map.CompressByGrid2D.MIPGap: 0.0015
+
+Map.CompressByGrid3D.num: 50
+Map.CompressByGrid3D.num2: 80
+Map.CompressByGrid3D.lambda: 500
+Map.CompressByGrid3D.lambda2: 0.2
+Map.CompressByGrid3D.lambda3: 0.005
+Map.CompressByGrid3D.GridWidth: 50.0
+Map.CompressByGrid3D.GridX: 25
+Map.CompressByGrid3D.GridY: 19
+Map.CompressByGrid3D.MIPGap: 0.0015
+Map.Resolution: 0.15
