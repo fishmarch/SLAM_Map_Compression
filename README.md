@@ -4,7 +4,7 @@
 
 ArXiv Preprint ([arXiv 2303.10882](https://arxiv.org/abs/2303.10882))
 
-Accepted in **CVPR 2023**
+Accepted in **[CVPR 2023](https://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Efficient_Map_Sparsification_Based_on_2D_and_3D_Discretized_Grids_CVPR_2023_paper.html)**
 </div>
 
 
@@ -68,10 +68,12 @@ Examples/Stereo/stereo_euroc_localize Vocabulary/ORBvoc.txt Examples/Stereo/EuRo
 
 ## Citation
 ```bibtex
-@article{zhang2023efficient,
-  title={Efficient Map Sparsification Based on 2D and 3D Discretized Grids},
-  author={Zhang, Xiaoyu and Liu, Yun-Hui},
-  journal={arXiv preprint arXiv:2303.10882},
-  year={2023}
+@InProceedings{Zhang_2023_CVPR,
+    author    = {Zhang, Xiaoyu and Liu, Yun-Hui},
+    title     = {Efficient Map Sparsification Based on 2D and 3D Discretized Grids},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {12470-12478}
 }
 ```
