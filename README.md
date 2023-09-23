@@ -29,6 +29,9 @@ The method is tested with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2). Ple
 ### Gurobi
 The mix-integer programming is solved using [GUROBI](https://www.gurobi.com).
 
+### OR-Tools
+Here is also a repo using OR-Tools to solve the same problem, [SLAM-Map-Compression-OR-Tools](https://github.com/Bungehurst/SLAM-Map-Compression-OR-Tools).
+
 ## Running
 
 The method now is testing with RGBD and stereo mode of ORB-SLAM2, and tested in [ICL-NUIM](https://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html),
